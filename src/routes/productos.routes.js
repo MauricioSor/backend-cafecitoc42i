@@ -2,14 +2,15 @@ import { Router } from "express";
 import {
   borrarProducto,
   crearProducto,
-  crearUsuario,
   editarProducto,
   obtenerProducto,
   obtenerProductos,
-  obtenerUsuarios,
-  obtenerUsuario
-} from "../controllers/productos.controllers";
 
+} 
+from "../controllers/productos.controllers";
+import{  obtenerUsuarios,
+  obtenerUsuario , crearUsuario
+} from "../controllers/usuario.controllers"
 const router = Router();
 
 // app.get('/productos', (req, res) => {
